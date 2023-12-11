@@ -1,6 +1,9 @@
 class CartsController < ApplicationController
 
   def show
+    if enhanced_cart.empty?
+      @empty_cart_message = "Your cart is empty. Please visit the home page to begin shopping."
+    end  
   end
 
   def add_item
