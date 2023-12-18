@@ -1,6 +1,5 @@
-describe('example to-do app', () => {
+describe('jungle app home page', () => {
   
-
   it('visits the app home page', () => {
     cy.visit('http://localhost:3000/')
   })
